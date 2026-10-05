@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    color: white;
+}
+
+.navbar h2 {
+    color: #60a5fa;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.btn.secondary {
+    background: #111827;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.section > p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.skills,
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.skill,
+.project {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill h3,
+.project h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.skill p,
+.project p {
+    line-height: 1.6;
+}
+
+.project span {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+.contact {
+    background: #eaf2ff;
+}
+
+.contact button {
+    margin-top: 25px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .skills,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+}
+.profile img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #2563eb;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background: #111827;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background: #111827;
+}
